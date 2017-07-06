@@ -1,0 +1,69 @@
+/*
+Error: Undefined variable: "$enable-print-styles".
+        on line 11 of /Volumes/SG GIBSON/Freelance/Tierra Azteca/bower_components/bootstrap/scss/_print.scss
+        from line 15 of /Volumes/SG GIBSON/Freelance/Tierra Azteca/bower_components/bootstrap/scss/bootstrap.scss
+
+6:  *\/
+7: 
+8: // Core variables and mixins
+9: //@import "variables";
+10: @import "mixins";
+11: @import "custom";
+12: 
+13: // Reset and dependencies
+14: @import "normalize";
+15: @import "print";
+16: 
+
+Backtrace:
+/Volumes/SG GIBSON/Freelance/Tierra Azteca/bower_components/bootstrap/scss/_print.scss:11
+/Volumes/SG GIBSON/Freelance/Tierra Azteca/bower_components/bootstrap/scss/bootstrap.scss:15
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:299:in `visit_if'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `map'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `load'
+/Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$enable-print-styles\".\A         on line 11 of /Volumes/SG GIBSON/Freelance/Tierra Azteca/bower_components/bootstrap/scss/_print.scss\A         from line 15 of /Volumes/SG GIBSON/Freelance/Tierra Azteca/bower_components/bootstrap/scss/bootstrap.scss\A \A 6:  */\A 7: \A 8: // Core variables and mixins\A 9: //@import \"variables\";\A 10: @import \"mixins\";\A 11: @import \"custom\";\A 12: \A 13: // Reset and dependencies\A 14: @import \"normalize\";\A 15: @import \"print\";\A 16: "; }
