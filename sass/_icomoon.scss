@@ -1,0 +1,134 @@
+// FontFace
+//
+// Links for icomoon.
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?u0ww56');
+  src:  url('../fonts/icomoon.eot?u0ww56#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?u0ww56') format('truetype'),
+    url('../fonts/icomoon.woff?u0ww56') format('woff'),
+    url('../fonts/icomoon.svg?u0ww56#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+// Variables
+//
+// Animated icons.
+$icomoon-list: 
+    apple,
+    badge,
+    coffee-beans,
+    cold,
+    headphones,
+    milk-products,
+    price-tag,
+    pyramidal,
+    vending-machine;
+
+
+// Icons Declarations
+//
+// Classes names for SVG icons.
+.icon-apple:before {
+  content: "\e900";
+  color: #fcc434;
+}
+.icon-badge:before {
+  content: "\e901";
+  color: #fcc434;
+}
+.icon-call-answer:before {
+  content: "\e902";
+  color: #fcc434;
+}
+.icon-chat:before {
+  content: "\e903";
+  color: #fcc434;
+}
+.icon-circular-target:before {
+  content: "\e904";
+  color: #fcc434;
+}
+.icon-coffee-beans:before {
+  content: "\e905";
+  color: #fcc434;
+}
+.icon-cold:before {
+  content: "\e906";
+  color: #fcc434;
+}
+.icon-contract:before {
+  content: "\e907";
+  color: #fcc434;
+}
+.icon-destination:before {
+  content: "\e908";
+  color: #fcc434;
+}
+.icon-maps:before {
+  content: "\e909";
+  color: #fcc434;
+}
+.icon-headphones:before {
+  content: "\e90a";
+  color: #fcc434;
+}
+.icon-milk-products:before {
+  content: "\e90b";
+  color: #fcc434;
+}
+.icon-price-tag:before {
+  content: "\e90c";
+  color: #fcc434;
+}
+.icon-pyramidal:before {
+  content: "\e90d";
+  color: #fcc434;
+}
+.icon-sensor:before {
+  content: "\e90e";
+  color: #fcc434;
+}
+.icon-specialist-user:before {
+  content: "\e90f";
+  color: #fcc434;
+}
+.icon-spreadsheet:before {
+  content: "\e910";
+  color: #fcc434;
+}
+.icon-vending-machine:before {
+  content: "\e911";
+  color: #fcc434;
+}
+.icon-weight-scale:before {
+  content: "\e912";
+  color: #fcc434;
+}
+
+// Icon Animations
+//
+// Animations for SVG icons.
+@for $i from 1 through 9{
+    .card:hover .icon-#{nth($icomoon-list, $i)}:before{
+        color: white;
+        @include transition(0.5s);
+    }
+}
