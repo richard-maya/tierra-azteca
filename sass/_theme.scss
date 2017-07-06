@@ -104,6 +104,17 @@ $features-list:
     font-size: 2rem;
     color: white;
 }
+.modal-body{
+    font-family: $paragraph-font;
+    
+    th{
+        font-size: 1.3rem;
+    }
+    
+    td:nth-child(2){
+        text-align: center;
+    }
+}
 
 
 // Navbar
@@ -368,6 +379,10 @@ section#vending-products{
     
     h3{
         font-size: 1.38rem;
+    }
+    
+    .modal-buttons-group{
+        margin-bottom: 0.618rem;
     }
 }
 

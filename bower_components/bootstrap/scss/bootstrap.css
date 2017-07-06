@@ -1,7 +1,7 @@
 /*
 Error: Undefined variable: "$enable-print-styles".
-        on line 11 of /Volumes/SG GIBSON/Freelance/Tierra Azteca/bower_components/bootstrap/scss/_print.scss
-        from line 15 of /Volumes/SG GIBSON/Freelance/Tierra Azteca/bower_components/bootstrap/scss/bootstrap.scss
+        on line 11 of /Volumes/SG GIBSON/GitHub/Tierra Azteca/bower_components/bootstrap/scss/_print.scss
+        from line 15 of /Volumes/SG GIBSON/GitHub/Tierra Azteca/bower_components/bootstrap/scss/bootstrap.scss
 
 6:  *\/
 7: 
@@ -16,8 +16,8 @@ Error: Undefined variable: "$enable-print-styles".
 16: 
 
 Backtrace:
-/Volumes/SG GIBSON/Freelance/Tierra Azteca/bower_components/bootstrap/scss/_print.scss:11
-/Volumes/SG GIBSON/Freelance/Tierra Azteca/bower_components/bootstrap/scss/bootstrap.scss:15
+/Volumes/SG GIBSON/GitHub/Tierra Azteca/bower_components/bootstrap/scss/_print.scss:11
+/Volumes/SG GIBSON/GitHub/Tierra Azteca/bower_components/bootstrap/scss/bootstrap.scss:15
 /Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 /Volumes/SG GIBSON/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:299:in `visit_if'
@@ -66,4 +66,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$enable-print-styles\".\A         on line 11 of /Volumes/SG GIBSON/Freelance/Tierra Azteca/bower_components/bootstrap/scss/_print.scss\A         from line 15 of /Volumes/SG GIBSON/Freelance/Tierra Azteca/bower_components/bootstrap/scss/bootstrap.scss\A \A 6:  */\A 7: \A 8: // Core variables and mixins\A 9: //@import \"variables\";\A 10: @import \"mixins\";\A 11: @import \"custom\";\A 12: \A 13: // Reset and dependencies\A 14: @import \"normalize\";\A 15: @import \"print\";\A 16: "; }
+  content: "Error: Undefined variable: \"$enable-print-styles\".\A         on line 11 of /Volumes/SG GIBSON/GitHub/Tierra Azteca/bower_components/bootstrap/scss/_print.scss\A         from line 15 of /Volumes/SG GIBSON/GitHub/Tierra Azteca/bower_components/bootstrap/scss/bootstrap.scss\A \A 6:  */\A 7: \A 8: // Core variables and mixins\A 9: //@import \"variables\";\A 10: @import \"mixins\";\A 11: @import \"custom\";\A 12: \A 13: // Reset and dependencies\A 14: @import \"normalize\";\A 15: @import \"print\";\A 16: "; }
