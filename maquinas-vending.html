@@ -40,7 +40,7 @@
     <!-- SEO INFO
     ================================================== -->
     <meta name="description" content="Tierra Vendig cuenta con diferentes alternativas comerciales que dan respuesta al objetivo que usted persiga con la introducción de equipos Vending en sus instalaciones.">
-    <meta name="keywords" content="máquinas vending, vending toluca, vending méxico, venta máquinas vending, vending méxico">
+    <meta name="keywords" content="máquinas vending, vending toluca, vending méxico, venta máquinas vending, vending méxico, vending machines en mexico, vending machines bimbo">
     <meta name="author" content="Richard Maya">
     <meta name="designer" content="Richard Maya">
     <meta name="geo.region" content="MX" />
@@ -848,7 +848,7 @@
  
 <!-- HEADING
 ================================================== -->
-<section id="vending-heading" class="parallax-window d-flex align-items-center wow fadeIn" data-parallax="scroll" data-image-src="img/galleria-1.jpg">
+<section id="vending-heading" class="parallax-window d-flex align-items-center wow fadeIn" data-parallax="scroll" data-image-src="img/room.jpg">
     <div class="container">
         <div class="row">
             <heading class="wow fadeInUp">
@@ -879,13 +879,13 @@
                     <!-- Images -->
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                            <img class="d-block img-fluid" src="https://dummyimage.com/400x300/FCC434/1CA7DA.jpg&text=Image-1" alt="First slide">
+                            <img class="d-block img-fluid" src="https://dummyimage.com/540x300/1CA7DA/FFFFFF.jpg&text=Image-1" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="https://dummyimage.com/400x300/FCC434/1CA7DA.jpg&text=Image-2" alt="Second slide">
+                            <img class="d-block img-fluid" src="https://dummyimage.com/540x300/1CA7DA/FFFFFF.jpg&text=Image-2" alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="https://dummyimage.com/400x300/FCC434/1CA7DA.jpg&text=Image-3" alt="Third slide">
+                            <img class="d-block img-fluid" src="https://dummyimage.com/540x300/1CA7DA/FFFFFF.jpg&text=Image-3" alt="Third slide">
                         </div>
                     </div>
                     
@@ -1162,11 +1162,24 @@
 <script src="assets/imagesloaded/imagesloaded.pkgd.min.js"></script>
 
 <script type="text/javascript">
-    new WOW().init();
-    $('.parallax-window').parallax({
-        imageSrc: 'img/galleria-1.jpg',
-        positionY: 'bottom'
-    });
+var wow = new WOW(
+  {
+    boxClass:     'wow',      
+    animateClass: 'animated', 
+    offset:       50,       
+    mobile:       true,       
+    live:         true,      
+    callback:     function(box) {
+    },
+    scrollContainer: null 
+  }
+);
+wow.init();
+    
+$('.parallax-window').parallax({
+    imageSrc: 'img/room.jpg',
+    positionY: 'bottom'
+});
 </script>
 
 </body>

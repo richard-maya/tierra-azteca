@@ -3,8 +3,8 @@
 * FILENAME :        TIERRA AZTECA | Index             
 *
 * DESCRIPTION :
-*       Sitio para promocionar los productos marca Tierra Azteca, así
-*       como las máquinas de Tierra Vending. 
+*       Web site dedicated to promote all Tierra Azteca products, as
+*       well as vending machines by Tierra Vending. 
 *
 *       Copyright Tierra Azteca © All rights reserved.
 * 
@@ -40,7 +40,7 @@
     <!-- SEO INFO
     ================================================== -->
     <meta name="description" content="Tierra Azteca es una empresa que fabrica y comercializa alimentos saludables mediante máquinas de vending.">
-    <meta name="keywords" content="máquinas vending, vending toluca, vending méxico, venta máquinas vending, vending méxico">
+    <meta name="keywords" content="máquinas vending, vending toluca, vending méxico, venta máquinas vending, vending méxico, vending machines en mexico, vending machines bimbo">
     <meta name="author" content="Richard Maya">
     <meta name="designer" content="Richard Maya">
     <meta name="geo.region" content="MX" />
@@ -275,7 +275,7 @@
 ================================================== -->
 <section id="links">
     <!-- Vending Machines -->
-    <div class="link-images text-right wow fadeInLeft" style="background: url('img/galleria-1.jpg') right bottom no-repeat;">
+    <div class="link-images text-right wow fadeInLeft" style="background: url('img/vending.png') right bottom no-repeat; background-size: 100% auto;">
         <h3>Máquinas Vending</h3>
         <br>
         <a href="maquinas-vending.html">
@@ -284,7 +284,7 @@
     </div>
 
     <!-- Tierra Azteca Products -->
-    <div class="link-images text-left wow fadeInRight" style="background: url('img/galleria-3.jpg') left bottom no-repeat;">
+    <div class="link-images text-left wow fadeInRight" style="background: url('img/seeds.png') left bottom no-repeat; background-size: 100% auto;">
         <h3 id="right">Productos Tierra Azteca</h3>
         <br>
         <a href="productos-azteca.html">
@@ -457,7 +457,19 @@
 <script src="assets/imagesloaded/imagesloaded.pkgd.min.js"></script>
 
 <script type="text/javascript">
-    new WOW().init();
+var wow = new WOW(
+  {
+    boxClass:     'wow',     
+    animateClass: 'animated', 
+    offset:       50,         
+    mobile:       true,    
+    live:         true,       
+    callback:     function(box) {
+    },
+    scrollContainer: null
+  }
+);
+wow.init();
 </script>
     
 </body>
