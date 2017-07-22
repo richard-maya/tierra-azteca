@@ -88,7 +88,7 @@
                 <a class="nav-link" href="tierra-azteca.html">Nosotros</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contacto-azteca.html">Contacto</a>
+                <a class="nav-link" href="contacto-azteca.php">Contacto</a>
             </li>
         </ul>
     </div>
@@ -275,7 +275,7 @@
 ================================================== -->
 <section id="links">
     <!-- Vending Machines -->
-    <div class="link-images text-right wow fadeInLeft" style="background: url('img/vending.png') right bottom no-repeat; background-size: 100% auto;">
+    <div class="link-images text-right wow fadeInLeft" style="background: url('img/vending.png') right bottom no-repeat;"> <!-- background-size: 100% auto; -->
         <h3>Máquinas Vending</h3>
         <br>
         <a href="maquinas-vending.html">
@@ -284,7 +284,7 @@
     </div>
 
     <!-- Tierra Azteca Products -->
-    <div class="link-images text-left wow fadeInRight" style="background: url('img/seeds.png') left bottom no-repeat; background-size: 100% auto;">
+    <div class="link-images text-left wow fadeInRight" style="background: url('img/seeds.png') left bottom no-repeat;"> <!-- background-size: 100% auto; -->
         <h3 id="right">Productos Tierra Azteca</h3>
         <br>
         <a href="productos-azteca.html">
@@ -405,7 +405,7 @@
                     <div class="col-9">
                         <h5>Encuéntranos</h5>
                         <p>Calle paralela 2 #17 Col. San Fernando Huixquilucan, Estado de México. C.P: 52765</p>
-                        <a href="contacto-azteca.html">Ver Mapa</a>
+                        <a href="contacto-azteca.php#azteca-map">Ver Mapa</a>
                     </div>
                 </div>
             </div>
@@ -418,7 +418,7 @@
                         <h5>Contáctanos</h5>
                         <p>Tel: <a href="tel://55-5815-0387">(52) 55 5815-0387</a> <br>
                             E-mail: <a href="mailto:contacto@tierraazteca.com">contacto@tierraazteca.com</a></p>
-                        <a href="contacto-azteca.html">Escríbenos un mensaje</a>
+                        <a href="contacto-azteca.php#azteca-contact-form">Escríbenos un mensaje</a>
                     </div>
                 </div>
             </div>
@@ -436,7 +436,7 @@
                     <span>|</span>
                     <a href="tierra-azteca.html">Nosotros</a>
                     <span>|</span>
-                    <a href="contacto-azteca.html">Contacto</a>
+                    <a href="contacto-azteca.php">Contacto</a>
                 </li>
             </ul>
         </div>
@@ -457,12 +457,27 @@
 <script src="assets/imagesloaded/imagesloaded.pkgd.min.js"></script>
 
 <script type="text/javascript">
+/*if(window.innerWidth >= 768){
+    var wow = new WOW(
+      {
+        boxClass:     'wow',     
+        animateClass: 'animated', 
+        offset:       50,         
+        mobile:       true,    
+        live:         true,       
+        callback:     function(box) {
+        },
+        scrollContainer: null
+      }
+    );
+    wow.init();
+}*/
 var wow = new WOW(
   {
     boxClass:     'wow',     
     animateClass: 'animated', 
     offset:       50,         
-    mobile:       true,    
+    mobile:       false,    
     live:         true,       
     callback:     function(box) {
     },

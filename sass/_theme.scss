@@ -471,6 +471,7 @@ section#azteca-mission{
     
     a{
         font-weight: bold;
+        color: $azteca-blue;
     }
     
     .card{
@@ -498,7 +499,8 @@ section#azteca-mission{
 //
 // Tierra Azteca Value Proposition
 section#proposition,
-section#azteca-history{
+section#azteca-history,
+section#confirm{
     padding: $main-padding 0px;
 }
 
@@ -512,6 +514,49 @@ section#contact-heading{
     
     heading{
         width: 100%;
+    }
+}
+
+
+// Contact Blue Slogan
+//
+// Contact blue slogan
+section#blue-slogan{
+    background: $azteca-dark-blue;
+    padding: $main-padding 0px;
+    
+    h3{
+        color: white;
+    }
+}
+
+
+// Contact Form
+//
+// Contact form and map
+section#contacto{
+    padding: $main-padding 0px;
+    font-family: $paragraph-font;
+    
+    input, textarea{
+        font-family: $paragraph-font;
+        
+        &:focus{
+            box-shadow: 0 2px 3px 1px $azteca-dark-blue;
+        }
+    }
+    
+    iframe{
+        border-radius: 0.618rem;
+        border: 2px solid darken($azteca-blue, 10%);
+    }
+    
+    a{
+        color: $azteca-blue;
+        
+        &:hover{
+            color: $azteca-dark-orange;
+        }
     }
 }
 
