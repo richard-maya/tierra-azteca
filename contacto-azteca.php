@@ -38,7 +38,7 @@
     
     <!-- SEO INFO
     ================================================== -->
-    <meta name="description" content="Espacio saludable con alimentación liger. ¡Consulta las ubicaciones!">
+    <meta name="description" content="Espacio saludable con alimentación ligera. ¡Consulta las ubicaciones!">
     <meta name="keywords" content="máquinas vending, vending toluca, vending méxico, alimentación sana, dieta equilibrada">
     <meta name="author" content="Richard Maya">
     <meta name="designer" content="Richard Maya">
