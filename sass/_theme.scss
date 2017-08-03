@@ -5,7 +5,7 @@
     font-family: benoit;
     src: url('../fonts/benoit.ttf');
 }
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+/*@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');*/
 
 
 // Variables
@@ -13,16 +13,16 @@
 // Main Variables.
 $main-logo-height: 100px;
 $overlayColor: rgba(28,167,212,0.2);
-$paragraph-font: 'Josefin Sans', sans-serif;
+$paragraph-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $main-padding: 1.618rem;
 $right-text-shadow: 3px 3px 5px #000000;
 $left-text-shadow: -3px 3px 5px #000000;
 
-$features-list:
+/*$features-list:
     milk-products,
     cold,
     sensor,
-    spreadsheet;
+    spreadsheet;*/
 
 
 // Typography
@@ -31,30 +31,35 @@ $features-list:
 .azteca-title{
     font-family: benoit;
     font-size: 2rem;
-    color: $azteca-dark-blue;
+    color: $azteca-marron;
     text-align: center;
     padding: $main-padding 0px;
+    letter-spacing: 2px;
 }
 .azteca-subtitle{
     @extend .azteca-title;
     font-size: 2rem * 0.618;
+    letter-spacing: 2px;
 }
 .azteca-paragraph{
     font-family: $paragraph-font;
     font-size: 2rem * 0.618;
     text-align: justify;
     line-height: ((2rem * 0.618) * 2) / 2;
+    letter-spacing: 1px;
 }
 .azteca-heading-white{
     @extend .azteca-title;
     color: white;
     text-shadow: $right-text-shadow;
+    letter-spacing: 2px;
 }
 .azteca-heading{
     @extend .azteca-title;
-    color: $azteca-orange;
+    color: $azteca-dark-orange;
     font-size: 2.618rem;
     text-shadow: $right-text-shadow;
+    letter-spacing: 2px;
 }
 
 
@@ -76,25 +81,25 @@ $features-list:
 .btn-white-outline.focus,
 .btn-white-outline:active,
 .btn-white-outline.active {
-  color: #535353;
+  color: $azteca-marron;
   background-color: rgba(255,255,255,1);
   border-color: #fff;
 }
 .btn-white-outline.disabled,
 .btn-white-outline:disabled {
-  color: #535353 !important;
+  color: $azteca-marron !important;
   background-color: rgba(255,255,255,1) !important;
   border-color: #fff !important;
 }
 .btn-azteca-outline{
     background-color: white;
-    border-color: $azteca-orange;
-    color: $azteca-orange;
+    border-color: $azteca-marron;
+    color: $azteca-marron;
     @include transition(0.5s);
     
     &:hover, &:focus, &.focus, &:active, &.active{
         color: white;
-        background-color: $azteca-orange;
+        background-color: $azteca-marron;
     }
 }
 
@@ -103,7 +108,7 @@ $features-list:
 //
 // Custom modal windows.
 .modal-header{
-    background: $azteca-dark-blue;
+    background: $azteca-marron;
     font-family: benoit;
     font-size: 2rem;
     color: white;
@@ -126,7 +131,7 @@ $features-list:
 // Navigation.
 section#main-logo{
     height: $main-logo-height;
-    background: $azteca-blue;
+    background: $azteca-yellow;
     
     img{
         height: $main-logo-height * 0.8;
@@ -137,13 +142,12 @@ section#main-logo{
 }
 
 .navbar{
-    background: $azteca-dark-blue;
+    background: $azteca-dark-orange;
     text-align: center;
     font-family: benoit;
-    line-height: 45px;
     
     li:hover{
-        background: darken($azteca-dark-blue, 5%);
+        background: darken($azteca-dark-orange, 5%);
         color: lighten($navbar-light-color, 10%);
         @include transition(0.5s);
     }
@@ -183,7 +187,7 @@ section#galleria{
 //
 // Brief description.
 section#summary{
-    background: $azteca-dark-blue;
+    background: $azteca-dark-orange;
     color: set-text-color($azteca-dark-blue);
     padding: $main-padding 0px;
     font-family: $paragraph-font;
@@ -193,6 +197,7 @@ section#summary{
     }
     
     h3{
+        font-family: benoit;
         text-align: center;
     }
 }
@@ -216,11 +221,9 @@ section#features{
         width: 100%;
         border: 0px;
         padding: $main-padding 0px;
-        @include transition(0.5s);
         
-        &:hover{
-            background: $azteca-orange;
-            color: white;
+        img{
+            width: 50%;
         }
     }
     
@@ -238,7 +241,7 @@ section#links{
     margin-bottom: 1.618rem !important;
     
     h3{
-        font-family: $paragraph-font;
+        font-family: benoit;
         color: $white;
         text-shadow: $left-text-shadow;
         
@@ -250,8 +253,18 @@ section#links{
     .link-images{
         height: 250px;
         padding: $main-padding;
-        width: 50%;
-        float: left;
+        width: 100%;
+        background-position: right bottom;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+    }
+    
+    #vending-link{
+        background-image: url(../img/vending.png);
+    }
+    
+    #productos-link{
+        background-image: url(../img/seeds.png);
     }
 }
 
@@ -259,9 +272,6 @@ section#links{
 // Process
 //
 // How do we do it?
-div.separador{
-    height: 225px;
-}
 section#process{
     padding: $main-padding 0px;
     
@@ -271,7 +281,7 @@ section#process{
     
     small{
         font-family: $paragraph-font;
-        color: $azteca-blue;
+        color: $azteca-brown;
         font-size: 0.9rem;
     }
     
@@ -350,7 +360,7 @@ section#vending-gallery{
 //
 // Vending Machine Main Features
 section#vending-features{
-    background: $azteca-dark-blue;
+    background: $azteca-dark-orange;
     color: white;
     padding: $main-padding 0px;
     
@@ -361,6 +371,10 @@ section#vending-features{
     .card{
         background: none;
         border: 0px;
+        
+        img{
+            width: 50%;
+        }
     }
     
     .card-text{
@@ -368,12 +382,12 @@ section#vending-features{
         text-align: center;
     }
     
-    @for $i from 1 through 4{
+    /*@for $i from 1 through 4{
         .icon-#{nth($features-list, $i)}:before{
             color: white;
             font-size: 6rem;
         }
-    }
+    }*/
 }
 
 
@@ -388,7 +402,11 @@ section#vending-products{
     }
     
     .modal-buttons-group{
-        margin-bottom: 0.618rem;
+        margin-bottom: 0.382rem;
+        
+        button{
+            margin-bottom: 0.382rem;
+        }
     }
 }
 
@@ -450,7 +468,7 @@ section#azteca-heading{
 section#azteca-about{
     padding: $main-padding 0px;
     color: white;
-    background: $azteca-dark-blue;
+    background: $azteca-dark-orange;
     
     h2{
         color: white;
@@ -471,7 +489,7 @@ section#azteca-mission{
     
     a{
         font-weight: bold;
-        color: $azteca-blue;
+        color: $azteca-brown;
     }
     
     .card{
@@ -479,7 +497,8 @@ section#azteca-mission{
         border: 0px;
         
         img{
-            width: 30%;
+            width: 50%;
+            margin-bottom: 1rem;
         }
     }
     
@@ -522,7 +541,7 @@ section#contact-heading{
 //
 // Contact blue slogan
 section#blue-slogan{
-    background: $azteca-dark-blue;
+    background: $azteca-dark-orange;
     padding: $main-padding 0px;
     
     h3{
@@ -542,20 +561,20 @@ section#contacto{
         font-family: $paragraph-font;
         
         &:focus{
-            box-shadow: 0 2px 3px 1px $azteca-dark-blue;
+            box-shadow: 0 2px 3px 1px $azteca-brown;
         }
     }
     
     iframe{
         border-radius: 0.618rem;
-        border: 2px solid darken($azteca-blue, 10%);
+        border: 2px solid darken($azteca-brown, 10%);
     }
     
     a{
-        color: $azteca-blue;
+        color: $azteca-marron;
         
         &:hover{
-            color: $azteca-dark-orange;
+            color: $azteca-brown;
         }
     }
 }
@@ -565,16 +584,12 @@ section#contacto{
 //
 // Tagline
 section#slogan{
-    background: $azteca-orange;
+    background: $azteca-dark-orange;
     padding: $main-padding 0px;
     
     img{
         height: 5rem;
         width: auto;
-        
-        &#vending-logo{
-            height: 4rem;
-        }
     }
     
     h2{
@@ -587,7 +602,7 @@ section#slogan{
 //
 // Contact Info
 footer{
-    background: $azteca-dark-blue;
+    background: $azteca-brown;
     padding: $main-padding 0px;
     color: white;
     font-family: $paragraph-font;
