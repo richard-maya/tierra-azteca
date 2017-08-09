@@ -1,6 +1,6 @@
 <?php
 
-define('EMAIL_FOR_REPORTS', 'richardbrees1@gmail.com');
+define('EMAIL_FOR_REPORTS', 'contacto@tierra-azteca.com');
 define('RECAPTCHA_PRIVATE_KEY', '@privatekey@');
 define('FINISH_URI', 'http://tierra-azteca.com/a/confirmacion.html');
 define('FINISH_ACTION', 'redirect');
