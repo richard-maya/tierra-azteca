@@ -43,7 +43,7 @@ $left-text-shadow: -3px 3px 5px #000000;
 }
 .azteca-paragraph{
     font-family: $paragraph-font;
-    font-size: 2rem * 0.618;
+    font-size: 1rem;
     text-align: justify;
     line-height: ((2rem * 0.618) * 2) / 2;
     letter-spacing: 1px;
@@ -200,6 +200,13 @@ section#summary{
         font-family: benoit;
         text-align: center;
     }
+    
+    img.down-arrow{
+        position: relative;
+        bottom: 0px;
+        
+        @include scrollAnim(2s);
+    }
 }
 
 
@@ -238,7 +245,7 @@ section#features{
 //
 // Links to prodcuts & services.
 section#links{
-    margin-bottom: 1.618rem !important;
+    margin: 2rem 0px $main-padding 0px !important;
     
     h3{
         font-family: benoit;
@@ -273,7 +280,7 @@ section#links{
 //
 // How do we do it?
 section#process{
-    padding: $main-padding 0px;
+    padding: $main-padding 0px 0px 0px;
     
     h2{
         padding-bottom: 0px;
@@ -309,24 +316,7 @@ section#customers{
     padding: $main-padding 0px;
 }
 .customers-animation:hover{
-  animation: customers-animation ease-out 1s;
-  animation-iteration-count: 1;
-  transform-origin: 50% 50%;
-}
-
-@keyframes customers-animation{
-  0% {
-    transform:  scaleX(1.00) scaleY(1.00) ;
-  }
-  25% {
-    transform:  scaleX(0.95) scaleY(0.95) ;
-  }
-  50% {
-    transform:  scaleX(1.15) scaleY(1.15) ;
-  }
-  100% {
-    transform:  scaleX(1.00) scaleY(1.00) ;
-  }
+    @include customersAnim();
 }
 
 
@@ -401,11 +391,31 @@ section#vending-products{
         font-size: 1.38rem;
     }
     
+    img.discount-icon{
+        height: 3.5rem;
+        @include arrowAnim(2s);
+    }
+    
     .modal-buttons-group{
         margin-bottom: 0.382rem;
         
         button{
             margin-bottom: 0.382rem;
+        }
+    }
+}
+div.modal{
+    td:nth-child(2){
+        font-size: 1.2rem;
+        color: $azteca-brown;
+    }
+    tr:hover{
+        background: $azteca-marron;
+        color: white;
+        @include transition(0.2s);
+        
+        td{
+            color: white;
         }
     }
 }
@@ -580,6 +590,19 @@ section#contacto{
 }
 
 
+// Write Us
+//
+// Call to Message
+section#write-us{
+    padding: 0px 0px $main-padding 0px;
+    
+    small{
+        margin-bottom: $main-padding;
+        font-style: italic;
+    }
+}
+
+
 // Slogan
 //
 // Tagline
@@ -631,6 +654,10 @@ footer{
     #copyright{
         padding-top: $main-padding;
         font-size: 0.9rem;
+    }
+    
+    #developer{
+        font-size: 0.618rem;
     }
 }
 

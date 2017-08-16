@@ -118,13 +118,63 @@
 </section>
 
 
+<!-- PROCESS
+================================================== -->
+<section id="process">
+    <center>
+        <h2 class="azteca-title text-center wow fadeInDown">¿Cómo lo hacemos?</h2>
+        <small class="wow fadeInDown">En 3 sencillos pasos usted y su empresa podrán comenzar a gozar de los beneficios de tener un equipo Vending en sus instalaciones.</small>
+    </center><br>
+    <div class="container">
+        <div class="row wow fadeInUp">
+           
+            <!-- Call -->
+            <div class="col-md-4">
+                <div class="card">
+                    <center>
+                        <img class="card-img-top" src="img/index-features/call-answer.png" alt="freepik-call-answer-vector">
+                    </center>
+                    <div class="card-block">
+                        <p class="card-text">Usted nos llama.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Brief -->
+            <div class="col-md-4 text-xs-center">
+                <div class="card">
+                    <center>
+                        <img class="card-img-top" src="img/index-features/specialist-user.png" alt="freepik-specialist-user-vector">
+                    </center>
+                    <div class="card-block">
+                        <p class="card-text">Uno de nuestros representantes lo visitará SIN NINGÚN COMPROMISO y le orientará acerca de la solución Vending ideal para su negocio.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Deal -->
+            <div class="col-md-4 text-xs-center">
+                <div class="card">
+                    <center>
+                        <img class="card-img-top" src="img/index-features/contract.png" alt="freepik-contract-vector">
+                    </center>
+                    <div class="card-block">
+                        <p class="card-text">Se firma el respectivo contrato y listo, usted empezará a gozar de los beneficios de éste sector comercial.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <!-- CONTACT FORM & MAP
 ================================================== -->
 <section id="contacto">
     <div class="container">
         <div class="row">
-            <div class="col-10 offset-1 col-md-7 offset-md-0">
-                <h2 class="azteca-title d-flex justify-content-left wow fadeInDown" id="azteca-contact-form">Contáctanos</h2>
+            <div class="col-10 offset-1 col-md-6 offset-md-3">
+                <h2 class="azteca-title d-flex justify-content-center wow fadeInDown" id="azteca-contact-form">Contáctanos</h2>
                 
                 <form class="formoid-solid-blue" method="post">
                     <div class="row">
@@ -179,33 +229,6 @@
                     
                 </form>
             </div>
-            
-            <div class="col-10 offset-1 col-md-5 offset-md-0">
-                <h2 class="azteca-title d-flex justify-content-left wow fadeInDown" id="azteca-map">Encuéntranos</h2>
-                
-                <!-- Map -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.574606540957!2d-99.28435418509399!3d19.387563686909935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDIzJzE1LjIiTiA5OcKwMTYnNTUuOCJX!5e0!3m2!1sen!2s!4v1499639173095" width="100%" height="300" allowfullscreen class="wow fadeInUp"></iframe> <br><br>
-                
-                <!-- Location -->
-                <div class="row wow fadeInUp">
-                    <div class="col-2">
-                        <img src="img/about/map.png" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-10">
-                        <p>Calle paralela 2 #17 Col. San Fernando Huixquilucan. Estado de México C.P. 52765</p>
-                    </div>
-                </div>
-                
-                <!-- Phone Number -->
-                <div class="row wow fadeInUp">
-                    <div class="col-2">
-                        <img src="img/index-features/call-answer.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="col-10">
-                        <p>Tel. <a href="tel://55-5815-0387">(52) 55 5815-0387</a></p>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
@@ -247,20 +270,7 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-10 offset-1 col-md-6 offset-md-0 wow fadeInLeft">
-                <div class="row">
-                    <div class="col-3">
-                        <img src="gph/destination.png" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-9">
-                        <h5>Encuéntranos</h5>
-                        <p>Calle paralela 2 #17 Col. San Fernando Huixquilucan, Estado de México. C.P: 52765</p>
-                        <a href="contacto-azteca.php#azteca-map">Ver Mapa</a>
-                    </div>
-                    <div style="height: 1.3rem; width: 100%" class="hidden-md-up"></div>
-                </div>
-            </div>
-            <div class="col-10 offset-1 col-md-6 offset-md-0 wow fadeInRight">
+            <div class="col-10 offset-1 col-md-6 offset-md-3 wow fadeInUp">
                 <div class="row">
                     <div class="col-3">
                         <img src="gph/chat.png" class="img-fluid" alt="">
@@ -296,8 +306,8 @@
             <p class="text-center" id="copyright">© Tierra Azteca 2017. Todos los derechos reservados.</p>
         </div>
         
-        <div class="row justify-content-center wow fadeInUp" style="display: none;">
-            <p class="text-center"><a href="http://meraki-creative.studio" rel="author" target="_blank">branding, fotografía, motion graphics, video, animación, toluca, metepec</a></p>
+        <div class="row justify-content-center wow fadeInUp">
+            <p class="text-center" id="developer">Desarrollado por <a href="http://meraki-creative.studio" rel="author" target="_blank">Meraki Creative Studio</a><a href="http://meraki-creative.studio" rel="author" target="_blank" style="display: none; visibility: hidden;">branding, fotografía, motion graphics, video, animación, toluca, metepec</a></p>
         </div>
     </div>
 </footer>
