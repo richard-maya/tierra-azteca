@@ -15,8 +15,8 @@
 // Variables
 //
 // Main Variables.
-$main-logo-height: 100px;
-$overlayColor: rgba(28,167,212,0.2);
+$main-logo-height: 120px;
+$overlayColor: rgba(255,229,72,0.15);
 $paragraph-font: cheltenhm-text;
 $main-padding: 1.618rem;
 $right-text-shadow: 3px 3px 5px #000000;
@@ -74,11 +74,21 @@ b{
     color: $azteca-marron;
     font-weight: bolder;
 }
+.blockquote{
+    font-family: $paragraph-font;
+    font-style: italic;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    border-color: $azteca-marron;
+}
 
 
 // Buttons
 //
 // Custom button styles.
+button:hover{
+    cursor: pointer;
+}
 .btn{
     font-family: $paragraph-font;
     border-radius: 1.6em;
@@ -144,13 +154,37 @@ b{
 // Navigation.
 section#main-logo{
     height: $main-logo-height;
-    background: $azteca-yellow;
+    background: url(../gph/heading.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right bottom;
     
     img{
-        height: $main-logo-height * 0.8;
-        width: auto;
-        padding-top: $main-logo-height * 0.1;
+        transform: translateY(15%);
+        z-index: 999 !important;
+    }
+    
+    nav{
+        height: 100%;
         
+        a{
+            color: white;
+            margin-left: 1rem;
+            padding: 0px 0.3rem;
+            line-height: $main-logo-height;
+            font-family: cheltenhm-title;
+            letter-spacing: 0.5px;
+            
+            &:hover{
+                background: $azteca-marron;
+                text-decoration: none;
+                @include transition(0.3s);
+            }
+        }
+        
+        a.active{
+            background: $azteca-marron;
+        }
     }
 }
 
@@ -171,10 +205,10 @@ section#main-logo{
 //
 // Main slideshow.
 section#galleria{
-    height: 300px;
+    height: 330px;
     
     .slides{
-        height: 300px;
+        height: 330px;
         width: 100%;
     }
 }
@@ -258,7 +292,8 @@ section#features{
 //
 // Links to prodcuts & services.
 section#links{
-    margin: 2rem 0px $main-padding 0px !important;
+    margin-bottom: $main-padding !important;
+    padding: 0px;
     
     h3{
         font-family: cheltenhm-title;
@@ -274,17 +309,20 @@ section#links{
         height: 250px;
         padding: $main-padding;
         width: 100%;
-        background-position: right bottom;
-        background-size: auto 100%;
-        background-repeat: no-repeat;
     }
     
     #vending-link{
-        background-image: url(../img/vending.png);
+        background-image: url(../img/index-features/link-machines.jpg);
+        background-position: right bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     
     #productos-link{
-        background-image: url(../img/seeds.png);
+        background-image: url(../img/index-features/link-products.jpg);
+        background-position: left bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 
@@ -341,7 +379,7 @@ section#products-heading,
 section#azteca-heading,
 section#contact-heading,
 section#eventos-heading{
-    height: 300px;
+    height: 330px;
     background: transparent;
     
     heading{
@@ -358,7 +396,9 @@ section#vending-gallery{
     
     #vending-carousel{
         width: 100%;
-        max-width: 540px;
+        max-width: 370px;
+        height: auto;
+        max-height: 600px;
     }
 }
 
@@ -446,7 +486,9 @@ section#products-gallery{
     
     #products-carousel{
         width: 100%;
-        max-width: 960px;
+        max-width: 600px;
+        height: auto;
+        max-height: 370px;
     }
 }
 

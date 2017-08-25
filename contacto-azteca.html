@@ -57,38 +57,52 @@
    
 <!-- NAV BAR
 ================================================== -->
-<section id="main-logo">
-    <center>
-        <img class="wow fadeInUp" src="gph/tierra-azteca.png" alt="tierra-azteca-logo">
-    </center>
+<section id="main-logo" class="d-flex align-items-end hidden-sm-down">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <img src="gph/tierra-azteca.png" alt="" class="img-fluid">
+            </div>
+            <nav class="col-12 col-md-10 d-flex justify-content-end">
+                <a href="index.html">Inicio</a>
+                <a href="tierra-azteca.html">Nosotros</a>
+                <a href="maquinas-vending.html">Máquinas</a>
+                <a href="productos-azteca.html">Productos</a>
+                <a href="eventos-azteca.html">Eventos</a>
+                <a href="contacto-azteca.php" class="active">Contacto</a>
+            </nav>
+        </div>
+    </div>
 </section>
 
-<nav class="navbar navbar-toggleable-md bg-faded sticky-top bg-primary navbar-inverse wow fadeIn">
+<nav class="navbar navbar-toggleable-md bg-faded sticky-top bg-primary navbar-inverse hidden-md-up">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
         aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="index.html">Tierra Azteca</a>
+    <a class="navbar-brand" href="index.html">
+        <img src="gph/tierra-azteca.png" width="auto" height="50" class="d-inline-block align-top" alt="">
+    </a>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Inicio</a>
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="tierra-azteca.html">Nosotros</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="maquinas-vending.html">Máquinas Vending</a>
+                <a class="nav-link" href="maquinas-vending.html">Máquinas</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="productos-azteca.html">Productos Tierra Azteca</a>
+                <a class="nav-link" href="productos-azteca.html">Productos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="eventos-azteca.html">Eventos para Socios</a>
+                <a class="nav-link" href="eventos-azteca.html">Eventos</a>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="contacto-azteca.php">Contacto <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="contacto-azteca.php">Contacto</a>
             </li>
         </ul>
     </div>
@@ -97,7 +111,7 @@
 
 <!-- HEADING
 ================================================== -->
-<section id="contact-heading" class="parallax-window d-flex align-items-center wow fadeIn" data-parallax="scroll" data-image-src="img/contact.jpg">
+<section id="contact-heading" class="parallax-window d-flex align-items-center wow fadeIn" data-parallax="scroll" data-image-src="img/headings/contact-heading.jpg">
     <div class="container">
         <div class="row">
             <heading class="wow fadeInUp">
@@ -343,7 +357,7 @@ var wow = new WOW(
 wow.init();
     
 $('.parallax-window').parallax({
-    imageSrc: 'img/contact.jpg',
+    imageSrc: 'img/headings/contact-heading.jpg',
     positionY: 'top'
 });
 </script>
