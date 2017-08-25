@@ -2,8 +2,12 @@
 //
 // Custom Fonts.
 @font-face{
-    font-family: benoit;
-    src: url('../fonts/benoit.ttf');
+    font-family: cheltenhm-title;
+    src: url('../fonts/CHLTHMB.TTF');
+}
+@font-face{
+    font-family: cheltenhm-text;
+    src: url('../fonts/CHLTHMN.TTF');
 }
 /*@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');*/
 
@@ -13,7 +17,7 @@
 // Main Variables.
 $main-logo-height: 100px;
 $overlayColor: rgba(28,167,212,0.2);
-$paragraph-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$paragraph-font: cheltenhm-text;
 $main-padding: 1.618rem;
 $right-text-shadow: 3px 3px 5px #000000;
 $left-text-shadow: -3px 3px 5px #000000;
@@ -29,7 +33,7 @@ $left-text-shadow: -3px 3px 5px #000000;
 //
 // Font faces.
 .azteca-title{
-    font-family: benoit;
+    font-family: cheltenhm-title;
     font-size: 2rem;
     color: $azteca-marron;
     text-align: center;
@@ -43,7 +47,7 @@ $left-text-shadow: -3px 3px 5px #000000;
 }
 .azteca-paragraph{
     font-family: $paragraph-font;
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-align: justify;
     line-height: ((2rem * 0.618) * 2) / 2;
     letter-spacing: 1px;
@@ -60,6 +64,15 @@ $left-text-shadow: -3px 3px 5px #000000;
     font-size: 2.618rem;
     text-shadow: $right-text-shadow;
     letter-spacing: 2px;
+}
+.azteca-list{
+    @extend .azteca-paragraph;
+    font-size: 1rem;
+    list-style-image: url(../gph/info.png);
+}
+b{
+    color: $azteca-marron;
+    font-weight: bolder;
 }
 
 
@@ -109,7 +122,7 @@ $left-text-shadow: -3px 3px 5px #000000;
 // Custom modal windows.
 .modal-header{
     background: $azteca-marron;
-    font-family: benoit;
+    font-family: cheltenhm-title;
     font-size: 2rem;
     color: white;
 }
@@ -144,7 +157,7 @@ section#main-logo{
 .navbar{
     background: $azteca-dark-orange;
     text-align: center;
-    font-family: benoit;
+    font-family: cheltenhm-title;
     
     li:hover{
         background: darken($azteca-dark-orange, 5%);
@@ -197,7 +210,7 @@ section#summary{
     }
     
     h3{
-        font-family: benoit;
+        font-family: cheltenhm-title;
         text-align: center;
     }
     
@@ -248,7 +261,7 @@ section#links{
     margin: 2rem 0px $main-padding 0px !important;
     
     h3{
-        font-family: benoit;
+        font-family: cheltenhm-title;
         color: $white;
         text-shadow: $left-text-shadow;
         
@@ -320,10 +333,14 @@ section#customers{
 }
 
 
-// Vending Heading
+// Headings
 //
-// Vending Machine Heading
-section#vending-heading{
+// Parallax heading
+section#vending-heading,
+section#products-heading,
+section#azteca-heading,
+section#contact-heading,
+section#eventos-heading{
     height: 300px;
     background: transparent;
     
@@ -421,19 +438,6 @@ div.modal{
 }
 
 
-// Products Heading
-//
-// Azteca Products Heading
-section#products-heading{
-    height: 300px;
-    background: transparent;
-    
-    heading{
-        width: 100%;
-    }
-}
-
-
 // Products Slideshow
 //
 // Azteca Products Images
@@ -455,19 +459,6 @@ section#products-description{
     
     img{
         border-radius: 0.618rem;
-    }
-}
-
-
-// Azteca Heading
-//
-// Tierra Azteca Heading
-section#azteca-heading{
-    height: 300px;
-    background: transparent;
-    
-    heading{
-        width: 100%;
     }
 }
 
@@ -531,19 +522,6 @@ section#proposition,
 section#azteca-history,
 section#confirm{
     padding: $main-padding 0px;
-}
-
-
-// Contact Heading
-//
-// Contact heading
-section#contact-heading{
-    height: 300px;
-    background: transparent;
-    
-    heading{
-        width: 100%;
-    }
 }
 
 

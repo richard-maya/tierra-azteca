@@ -84,6 +84,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="productos-azteca.html">Productos Tierra Azteca</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="eventos-azteca.html">Eventos para Socios</a>
+            </li>
             <li class="nav-item active">
                 <a class="nav-link" href="contacto-azteca.php">Contacto <span class="sr-only">(current)</span></a>
             </li>
@@ -112,7 +115,7 @@
 <section id="blue-slogan">
     <div class="container">
         <div class="row d-flex justify-content-center">
-            <h3 class="azteca-subtitle wow fadeInUp">Productos saludables de alta calidad a precios competitivos</h3>
+            <h3 class="azteca-subtitle wow fadeInUp font-italic">Productos saludables de alta calidad a precios competitivos</h3>
         </div>
     </div>
 </section>
@@ -243,7 +246,7 @@
                 <img class="wow fadeInLeft img-fluid" src="gph/tierra-azteca.png" alt="tierra-azteca-logo">
             </div>
             <div class="col-6">
-                <h2 class="azteca-title text-center wow fadeInUp">Saludable en cada Selección</h2>
+                <h2 class="azteca-title text-center wow fadeInUp font-italic">Saludable en cada Selección</h2>
             </div>
             <div class="col-2">
                 <img class="wow fadeInRight img-fluid" src="gph/tierra-vending.png" alt="tierra-vending-logo">
@@ -296,6 +299,8 @@
                     <a href="maquinas-vending.html">Máquinas Vending</a>
                     <span class="hidden-sm-down">|</span><br class="hidden-md-up">
                     <a href="productos-azteca.html">Productos Tierra Azteca</a>
+                    <span class="hidden-sm-down">|</span><br class="hidden-md-up">
+                    <a href="eventos-azteca.html">Eventos para Socios</a>
                     <span class="hidden-sm-down">|</span><br class="hidden-md-up">
                     <a href="contacto-azteca.php">Contacto</a>
                 </li>
