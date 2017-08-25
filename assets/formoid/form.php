@@ -1,9 +1,9 @@
 <?php
 
-define('EMAIL_FOR_REPORTS', 'richardbrees1@gmail.com');
+define('EMAIL_FOR_REPORTS', 'contacto@tierra-azteca.com');
 define('RECAPTCHA_PRIVATE_KEY', '@privatekey@');
-define('FINISH_URI', 'http://');
-define('FINISH_ACTION', 'message');
+define('FINISH_URI', 'http://tierra-azteca.com/a/confirmacion.html');
+define('FINISH_ACTION', 'redirect');
 define('FINISH_MESSAGE', '¡Gracias por comunicarte con nosotros! En unos momentos nos pondremos en contacto contigo.');
 define('UPLOAD_ALLOWED_FILE_TYPES', 'doc, docx, xls, csv, txt, rtf, html, zip, jpg, jpeg, png, gif');
 
