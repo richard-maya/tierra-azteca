@@ -111,7 +111,7 @@ $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
 // Reassign color vars to semantic color scheme
-$brand-primary:             $blue !default;
+$brand-primary:             #F4941B !default;
 $brand-success:             $green !default;
 $brand-info:                $teal !default;
 $brand-warning:             $orange !default;
@@ -119,11 +119,13 @@ $brand-danger:              $red !default;
 $brand-inverse:             $gray-dark !default;
 
 // Tierra Azteca Colors
-$azteca-dark-blue:          #1CA7DA;
+$azteca-dark-blue:          #04ACDC;
 $azteca-blue:               #A1DEF0;
-$azteca-yellow:             #FCF13B;
+$azteca-yellow:             #FFE548;
 $azteca-orange:             #FCC434;
-$azteca-dark-orange:        #FCA234;
+$azteca-dark-orange:        #F4941B;
+$azteca-brown:              #582707;
+$azteca-marron:             #972D07;
 
 
 // Options
@@ -426,8 +428,8 @@ $input-line-height:              1.25 !default;
 $input-bg:                       $white !default;
 $input-bg-disabled:              $gray-lighter !default;
 
-$input-color:                    $gray !default;
-$input-border-color:             rgba($black,.15) !default;
+$input-color:                    $azteca-brown !default;
+$input-border-color:             $azteca-brown !default;
 $input-btn-border-width:         $border-width !default; // For form controls and buttons
 $input-box-shadow:               inset 0 1px 1px rgba($black,.075) !default;
 
@@ -436,11 +438,11 @@ $input-border-radius-lg:         $border-radius-lg !default;
 $input-border-radius-sm:         $border-radius-sm !default;
 
 $input-bg-focus:                 $input-bg !default;
-$input-border-focus:             lighten($brand-primary, 25%) !default;
-$input-box-shadow-focus:         $input-box-shadow, rgba($input-border-focus, .6) !default;
+$input-border-focus:             darken($azteca-brown, 25%) !default;
+$input-box-shadow-focus:         $input-box-shadow, rgba($input-border-focus, 1) !default;
 $input-color-focus:              $input-color !default;
 
-$input-color-placeholder:        $gray-light !default;
+$input-color-placeholder:        lighten($azteca-brown, 65%) !default;
 
 $input-padding-x-sm:             .5rem !default;
 $input-padding-y-sm:             .25rem !default;
@@ -923,14 +925,14 @@ $breadcrumb-divider:            "/" !default;
 
 // Carousel
 
-$carousel-control-color:                      $azteca-dark-orange !default;
+$carousel-control-color:                      $white !default;
 $carousel-control-width:                      15% !default;
 $carousel-control-opacity:                    .5 !default;
 
 $carousel-indicator-width:                    30px !default;
 $carousel-indicator-height:                   3px !default;
 $carousel-indicator-spacer:                   3px !default;
-$carousel-indicator-active-bg:                $azteca-dark-orange !default;
+$carousel-indicator-active-bg:                $white !default;
 
 $carousel-caption-width:                      70% !default;
 $carousel-caption-color:                      $white !default;
