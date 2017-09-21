@@ -14,13 +14,13 @@
     animation: arrow-anim ease $time;
     animation-iteration-count: infinite;
     transform-origin: 50% 50%;
-    
+
     @keyframes arrow-anim {
         0% {
             transform: translate(0px, 0px);
         }
         40% {
-            transform: translate(0px, 15px);
+            transform: translate(0px, -18px);
         }
         96% {
             transform: translate(0px, 0px);
@@ -35,19 +35,19 @@
     animation: scroll-anim ease $time;
     animation-iteration-count: infinite;
     transform-origin: 50% 50%;
-    
+
     @keyframes scroll-anim {
         0% {
-            transform: translate(0px, 0px);
+            transform: translate(0px, 100px);
         }
         40% {
-            transform: translate(0px, -18px);
+            transform: translate(0px, 115px);
         }
         96% {
-            transform: translate(0px, 0px);
+            transform: translate(0px, 100px);
         }
         100% {
-            transform: translate(0px, 0px);
+            transform: translate(0px, 100px);
         }
     }
 }

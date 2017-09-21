@@ -9,6 +9,7 @@
     font-family: cheltenhm-text;
     src: url('../fonts/CHLTHMN.TTF');
 }
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 /*@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');*/
 
 
@@ -17,10 +18,15 @@
 // Main Variables.
 $main-logo-height: 120px;
 $overlayColor: rgba(255,229,72,0.15);
-$paragraph-font: cheltenhm-text;
+$paragraph-font: 'Open Sans', sans-serif;
 $main-padding: 1.618rem;
 $right-text-shadow: 3px 3px 5px #000000;
 $left-text-shadow: -3px 3px 5px #000000;
+
+$modularscale: (
+    base: 1rem,
+    ratio: $fourth
+);
 
 /*$features-list:
     milk-products,
@@ -34,23 +40,48 @@ $left-text-shadow: -3px 3px 5px #000000;
 // Font faces.
 .azteca-title{
     font-family: cheltenhm-title;
-    font-size: 2rem;
+    font-size: ms(3);
     color: $azteca-marron;
     text-align: center;
     padding: $main-padding 0px;
     letter-spacing: 2px;
 }
+.grupoa-title{
+    @extend .azteca-title;
+    color: $azteca-dark-blue;
+}
+.vending-title{
+    @extend .azteca-title;
+    color: $azteca-dark-green;
+}
 .azteca-subtitle{
     @extend .azteca-title;
-    font-size: 2rem * 0.618;
+    font-size: ms(2);
     letter-spacing: 2px;
 }
+.vending-subtitle{
+    @extend .azteca-title;
+    font-size: ms(2);
+    letter-spacing: 2px;
+    color: $azteca-dark-green;
+}
 .azteca-paragraph{
-    font-family: $paragraph-font;
-    font-size: 1.1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: ms(0);
     text-align: justify;
-    line-height: ((2rem * 0.618) * 2) / 2;
     letter-spacing: 1px;
+    font-weight: 300;
+}
+.azteca-lead{
+    @extend .azteca-paragraph;
+    font-size: ms(1);
+    font-weight: 400;
+}
+.vending-lead{
+    @extend .azteca-paragraph;
+    font-size: ms(1);
+    font-weight: 400;
+    color: $azteca-dark-green;
 }
 .azteca-heading-white{
     @extend .azteca-title;
@@ -61,25 +92,37 @@ $left-text-shadow: -3px 3px 5px #000000;
 .azteca-heading{
     @extend .azteca-title;
     color: $azteca-dark-orange;
-    font-size: 2.618rem;
+    font-size: ms(4);
     text-shadow: $right-text-shadow;
     letter-spacing: 2px;
 }
+.grupoa-heading{
+    @extend .azteca-heading;
+    color: $azteca-dark-blue;
+}
+.vending-heading{
+    @extend .azteca-heading;
+    color: $azteca-dark-green;
+}
+.azteca-footer{
+    @extend .azteca-paragraph;
+    font-size: ms(-1);
+}
 .azteca-list{
     @extend .azteca-paragraph;
-    font-size: 1rem;
     list-style-image: url(../gph/info.png);
 }
 b{
-    color: $azteca-marron;
+    color: $azteca-dark-green;
     font-weight: bolder;
 }
 .blockquote{
     font-family: $paragraph-font;
+    font-weight: 300;
     font-style: italic;
-    font-size: 1rem;
+    font-size: ms(0);
     letter-spacing: 0.5px;
-    border-color: $azteca-marron;
+    border-color: $azteca-dark-blue;
 }
 
 
@@ -119,10 +162,32 @@ button:hover{
     border-color: $azteca-marron;
     color: $azteca-marron;
     @include transition(0.5s);
-    
+
     &:hover, &:focus, &.focus, &:active, &.active{
         color: white;
         background-color: $azteca-marron;
+    }
+}
+.btn-vending-outline{
+    background-color: white;
+    border-color: $azteca-dark-green;
+    color: $azteca-dark-green;
+    @include transition(0.5s);
+
+    &:hover, &:focus, &.focus, &:active, &.active{
+        color: white;
+        background-color: $azteca-dark-green;
+    }
+}
+.btn-vending{
+    background-color: $azteca-green;
+    border-color: $azteca-green;
+    color: white;
+    @include transition(0.5s);
+
+    &:hover, &:focus, &.focus, &:active, &.active{
+        color: white;
+        background-color: $azteca-dark-green;
     }
 }
 
@@ -131,18 +196,18 @@ button:hover{
 //
 // Custom modal windows.
 .modal-header{
-    background: $azteca-marron;
-    font-family: cheltenhm-title;
+    background: $azteca-dark-green;
+    font-family: $paragraph-font;
     font-size: 2rem;
     color: white;
 }
 .modal-body{
     font-family: $paragraph-font;
-    
+
     th{
         font-size: 1.3rem;
     }
-    
+
     td:nth-child(2){
         text-align: center;
     }
@@ -152,21 +217,23 @@ button:hover{
 // Navbar
 //
 // Navigation.
-section#main-logo{
+section#main-logo,
+section#blue-logo,
+section#green-logo{
     height: $main-logo-height;
     background: url(../gph/heading.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right bottom;
-    
+
     img{
         transform: translateY(15%);
         z-index: 999 !important;
     }
-    
+
     nav{
         height: 100%;
-        
+
         a{
             color: white;
             margin-left: 1rem;
@@ -174,25 +241,52 @@ section#main-logo{
             line-height: $main-logo-height;
             font-family: cheltenhm-title;
             letter-spacing: 0.5px;
-            
+
             &:hover{
                 background: $azteca-marron;
                 text-decoration: none;
                 @include transition(0.3s);
             }
         }
-        
+
         a.active{
             background: $azteca-marron;
         }
     }
 }
+section#blue-logo{
+    background: url(../gph/blue-heading.jpg);
+
+    img{
+        transform: translateY(5%);
+    }
+
+    a:hover,
+    a.active{
+        background: $azteca-dark-blue;
+    }
+}
+section#green-logo{
+    background: url(../gph/green-heading.jpg);
+
+    img{
+        transform: translateY(5%);
+    }
+
+    nav{
+        a:hover,
+        a.active{
+            background: $azteca-dark-green;
+        }
+    }
+}
+
 
 .navbar{
     background: $azteca-dark-orange;
     text-align: center;
     font-family: cheltenhm-title;
-    
+
     li:hover{
         background: darken($azteca-dark-orange, 5%);
         color: lighten($navbar-light-color, 10%);
@@ -204,11 +298,52 @@ section#main-logo{
 // Galleria
 //
 // Main slideshow.
+section#index-carousel{
+    height: 100vh;
+    width: 100%;
+    background: black;
+}
+div#carouselExampleSlidesOnly{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.5;
+    overflow: hidden;
+}
+div.overlay-index{
+    position: absolute;
+    background-image: url('../gph/pattern.png');
+    background-repeat: repeat;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    color: $azteca-blue;
+
+    img.down-arrow{
+        position: relative;
+        bottom: 0px;
+
+        @include scrollAnim(2s);
+    }
+}
+.index-box{
+    background-color: rgba(0,0,0,0.2);
+    outline: 2px dotted $azteca-blue;
+    padding: 2rem;
+
+    &:hover{
+        background-color: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+        @include transition(0.5s);
+    }
+}
 section#galleria{
-    height: 330px;
-    
+    height: 70vh;
+
     .slides{
-        height: 330px;
+        height: 70vh;
         width: 100%;
     }
 }
@@ -223,10 +358,14 @@ section#galleria{
     z-index: 1;
     height: 100%;
     width: 100%;
-    
+
     ~ *{
         z-index: 2;
     }
+}
+.green-overlay{
+    @extend .overlay;
+    background-color: $azteca-green;
 }
 
 
@@ -238,22 +377,19 @@ section#summary{
     color: set-text-color($azteca-dark-blue);
     padding: $main-padding 0px;
     font-family: $paragraph-font;
-    
+
     p{
         text-align: justify;
     }
-    
+
     h3{
         font-family: cheltenhm-title;
         text-align: center;
     }
-    
-    img.down-arrow{
-        position: relative;
-        bottom: 0px;
-        
-        @include scrollAnim(2s);
-    }
+}
+section#green-summary{
+    @extend section#summary;
+    background: $azteca-green;
 }
 
 
@@ -262,25 +398,25 @@ section#summary{
 // Our main features.
 section#features{
     padding: $main-padding 0px;
-    
+
     .icomoon{
         font-size: 7rem;
     }
-    
+
     h1{
         text-align: center !important;
     }
-    
+
     .card{
         width: 100%;
         border: 0px;
         padding: $main-padding 0px;
-        
+
         img{
             width: 50%;
         }
     }
-    
+
     .card-text{
         font-family: $paragraph-font;
         text-align: center;
@@ -294,30 +430,30 @@ section#features{
 section#links{
     margin-bottom: $main-padding !important;
     padding: 0px;
-    
+
     h3{
         font-family: cheltenhm-title;
         color: $white;
         text-shadow: $left-text-shadow;
-        
+
         #right{
             text-shadow: $right-text-shadow;
         }
     }
-    
+
     .link-images{
         height: 250px;
         padding: $main-padding;
         width: 100%;
     }
-    
+
     #vending-link{
         background-image: url(../img/index-features/link-machines.jpg);
         background-position: right bottom;
         background-size: cover;
         background-repeat: no-repeat;
     }
-    
+
     #productos-link{
         background-image: url(../img/index-features/link-products.jpg);
         background-position: left bottom;
@@ -332,27 +468,27 @@ section#links{
 // How do we do it?
 section#process{
     padding: $main-padding 0px 0px 0px;
-    
+
     h2{
         padding-bottom: 0px;
     }
-    
+
     small{
         font-family: $paragraph-font;
         color: $azteca-brown;
         font-size: 0.9rem;
     }
-    
+
     .card{
         width: 100%;
         border: 0px;
-        
+
         img{
             width: 38.2%;
             padding-top: 1rem;
         }
     }
-    
+
     .card-text{
         font-family: $paragraph-font;
         text-align: center;
@@ -364,7 +500,7 @@ section#process{
 //
 // Our clients
 section#customers{
-    padding: $main-padding 0px;
+    padding: 0px 0px $main-padding 0px;
 }
 .customers-animation:hover{
     @include customersAnim();
@@ -378,10 +514,11 @@ section#vending-heading,
 section#products-heading,
 section#azteca-heading,
 section#contact-heading,
-section#eventos-heading{
+section#eventos-heading,
+section#tips-heading{
     height: 330px;
     background: transparent;
-    
+
     heading{
         width: 100%;
     }
@@ -393,7 +530,7 @@ section#eventos-heading{
 // Vending Machine Images
 section#vending-gallery{
     padding: $main-padding 0px;
-    
+
     #vending-carousel{
         width: 100%;
         max-width: 370px;
@@ -407,28 +544,28 @@ section#vending-gallery{
 //
 // Vending Machine Main Features
 section#vending-features{
-    background: $azteca-dark-orange;
+    background: $azteca-dark-green;
     color: white;
     padding: $main-padding 0px;
-    
+
     h2{
         color: white;
     }
-    
+
     .card{
         background: none;
         border: 0px;
-        
+
         img{
             width: 50%;
         }
     }
-    
+
     .card-text{
         font-family: $paragraph-font;
         text-align: center;
     }
-    
+
     /*@for $i from 1 through 4{
         .icon-#{nth($features-list, $i)}:before{
             color: white;
@@ -443,19 +580,19 @@ section#vending-features{
 // Brands of products
 section#vending-products{
     padding: $main-padding 0px;
-    
+
     h3{
         font-size: 1.38rem;
     }
-    
+
     img.discount-icon{
         height: 3.5rem;
         @include arrowAnim(2s);
     }
-    
+
     .modal-buttons-group{
         margin-bottom: 0.382rem;
-        
+
         button{
             margin-bottom: 0.382rem;
         }
@@ -464,13 +601,17 @@ section#vending-products{
 div.modal{
     td:nth-child(2){
         font-size: 1.2rem;
-        color: $azteca-brown;
+        color: $azteca-dark-green;
+    }
+    thead:hover tr{
+        background: white;
+        color: black;
     }
     tr:hover{
-        background: $azteca-marron;
+        background: $azteca-dark-green;
         color: white;
         @include transition(0.2s);
-        
+
         td{
             color: white;
         }
@@ -483,7 +624,7 @@ div.modal{
 // Azteca Products Images
 section#products-gallery{
     padding: $main-padding 0px;
-    
+
     #products-carousel{
         width: 100%;
         max-width: 600px;
@@ -496,11 +637,37 @@ section#products-gallery{
 // Products Description
 //
 // Azteca Products brief intro.
-section#products-description{
+section#products-description,
+section.tips-alimentacion{
     padding: $main-padding 0px;
-    
+
     img{
         border-radius: 0.618rem;
+    }
+}
+
+
+// Healthy Project
+//
+// Vending machines proposal.
+section#healthy-project{
+    padding: $main-padding 0px;
+    a{
+        color: $azteca-dark-green;
+        &:hover{
+            color: darken($azteca-dark-green, 10%);
+        }
+    }
+}
+
+
+// Veinding Menu
+//
+// Vending sections.
+section#vending-menu{
+    padding: $main-padding 0px;
+    div.card-body{
+        padding: 1rem;
     }
 }
 
@@ -511,13 +678,13 @@ section#products-description{
 section#azteca-about{
     padding: $main-padding 0px;
     color: white;
-    background: $azteca-dark-orange;
-    
+    background: $azteca-dark-blue;
+
     h2{
         color: white;
         text-align: left;
     }
-    
+
     img{
         border-radius: 0.618rem;
     }
@@ -529,30 +696,30 @@ section#azteca-about{
 // Tierra Azteca Values & Goals
 section#azteca-mission{
     padding: $main-padding 0px;
-    
+
     a{
         font-weight: bold;
         color: $azteca-brown;
     }
-    
+
     .card{
         width: 100%;
         border: 0px;
-        
+
         img{
             width: 50%;
             margin-bottom: 1rem;
         }
     }
-    
+
     h3{
         padding: 0px;
         margin-top: -20px;
     }
-    
+
     .card-text{
         font-family: $paragraph-font;
-        text-align: justify;
+        font-weight: 300;
     }
 }
 
@@ -562,8 +729,22 @@ section#azteca-mission{
 // Tierra Azteca Value Proposition
 section#proposition,
 section#azteca-history,
-section#confirm{
+section#confirm,
+section#vending-specs{
     padding: $main-padding 0px;
+}
+
+
+section#vending-machines{
+    padding: 0px 0px $main-padding 0px;
+    a{
+        color: $azteca-dark-green;
+        font-family: $paragraph-font;
+
+        &.active{
+            color: white;
+        }
+    }
 }
 
 
@@ -573,10 +754,14 @@ section#confirm{
 section#blue-slogan{
     background: $azteca-dark-orange;
     padding: $main-padding 0px;
-    
+
     h3{
         color: white;
     }
+}
+section#green-slogan{
+    @extend section#blue-slogan;
+    background: $azteca-green;
 }
 
 
@@ -586,23 +771,23 @@ section#blue-slogan{
 section#contacto{
     padding: $main-padding 0px;
     font-family: $paragraph-font;
-    
+
     input, textarea{
         font-family: $paragraph-font;
-        
+
         &:focus{
             box-shadow: 0 2px 3px 1px $azteca-brown;
         }
     }
-    
+
     iframe{
         border-radius: 0.618rem;
         border: 2px solid darken($azteca-brown, 10%);
     }
-    
+
     a{
         color: $azteca-marron;
-        
+
         &:hover{
             color: $azteca-brown;
         }
@@ -615,7 +800,7 @@ section#contacto{
 // Call to Message
 section#write-us{
     padding: 0px 0px $main-padding 0px;
-    
+
     small{
         margin-bottom: $main-padding;
         font-style: italic;
@@ -629,12 +814,12 @@ section#write-us{
 section#slogan{
     background: $azteca-dark-orange;
     padding: $main-padding 0px;
-    
+
     img{
         height: 5rem;
         width: auto;
     }
-    
+
     h2{
         color: white;
     }
@@ -649,35 +834,50 @@ footer{
     padding: $main-padding 0px;
     color: white;
     font-family: $paragraph-font;
-    
+
     h5{
+        font-family: 'Open Sans', sans-serif;
         font-weight: bolder;
     }
-    
+
     a{
         color: white;
         text-decoration: underline;
-        
+
         &:hover{
             color: $azteca-orange;
         }
     }
-    
+
     ul.nav{
         padding-top: $main-padding;
-        
+
         a{
             padding: 0px 1rem;
         }
     }
-    
+
     #copyright{
         padding-top: $main-padding;
-        font-size: 0.9rem;
+        font-size: ms(-1);
     }
-    
+
     #developer{
-        font-size: 0.618rem;
+        font-size: ms(-2);
+    }
+}
+.grupoa-footer{
+    background: $azteca-dark-blue;
+
+    a:hover{
+        color: $azteca-blue;
+    }
+}
+.vending-footer{
+    background: $azteca-dark-green;
+
+    a:hover{
+        color: $azteca-green;
     }
 }
 
