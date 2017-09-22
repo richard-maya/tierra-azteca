@@ -98,11 +98,11 @@ $modularscale: (
 }
 .grupoa-heading{
     @extend .azteca-heading;
-    color: $azteca-dark-blue;
+    color: $azteca-blue;
 }
 .vending-heading{
     @extend .azteca-heading;
-    color: $azteca-dark-green;
+    color: $azteca-green;
 }
 .azteca-footer{
     @extend .azteca-paragraph;
@@ -168,6 +168,17 @@ button:hover{
         background-color: $azteca-marron;
     }
 }
+.btn-grupoa-outline{
+    background-color: white;
+    border-color: $azteca-dark-blue;
+    color: $azteca-dark-blue;
+    @include transition(0.5s);
+
+    &:hover, &:focus, &.focus, &:active, &.active{
+        color: white;
+        background-color: $azteca-dark-blue;
+    }
+}
 .btn-vending-outline{
     background-color: white;
     border-color: $azteca-dark-green;
@@ -217,9 +228,7 @@ button:hover{
 // Navbar
 //
 // Navigation.
-section#main-logo,
-section#blue-logo,
-section#green-logo{
+section#main-logo{
     height: $main-logo-height;
     background: url(../gph/heading.jpg);
     background-size: cover;
@@ -255,6 +264,7 @@ section#green-logo{
     }
 }
 section#blue-logo{
+    @extend section#main-logo;
     background: url(../gph/blue-heading.jpg);
 
     img{
@@ -263,20 +273,21 @@ section#blue-logo{
 
     a:hover,
     a.active{
-        background: $azteca-dark-blue;
+        background: $azteca-dark-blue !important;
     }
 }
 section#green-logo{
+    @extend section#main-logo;
     background: url(../gph/green-heading.jpg);
 
     img{
-        transform: translateY(5%);
+        transform: translateY(10%);
     }
 
     nav{
         a:hover,
         a.active{
-            background: $azteca-dark-green;
+            background: $azteca-dark-green !important;
         }
     }
 }
@@ -319,7 +330,7 @@ div.overlay-index{
     width: 100%;
     top: 0px;
     left: 0px;
-    color: $azteca-blue;
+    color: white;
 
     img.down-arrow{
         position: relative;
@@ -330,7 +341,7 @@ div.overlay-index{
 }
 .index-box{
     background-color: rgba(0,0,0,0.2);
-    outline: 2px dotted $azteca-blue;
+    outline: 2px dotted white;
     padding: 2rem;
 
     &:hover{
@@ -475,7 +486,7 @@ section#process{
 
     small{
         font-family: $paragraph-font;
-        color: $azteca-brown;
+        color: $azteca-dark-blue;
         font-size: 0.9rem;
     }
 
@@ -752,7 +763,7 @@ section#vending-machines{
 //
 // Contact blue slogan
 section#blue-slogan{
-    background: $azteca-dark-orange;
+    background: $azteca-dark-blue;
     padding: $main-padding 0px;
 
     h3{
@@ -776,7 +787,7 @@ section#contacto{
         font-family: $paragraph-font;
 
         &:focus{
-            box-shadow: 0 2px 3px 1px $azteca-brown;
+            box-shadow: 0 2px 3px 1px $azteca-dark-blue;
         }
     }
 
@@ -870,7 +881,7 @@ footer{
     background: $azteca-dark-blue;
 
     a:hover{
-        color: $azteca-blue;
+        color: $azteca-yellow;
     }
 }
 .vending-footer{
