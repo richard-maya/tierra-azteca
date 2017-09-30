@@ -1,14 +1,14 @@
 // Fonts
 //
 // Custom Fonts.
-@font-face{
-    font-family: cheltenhm-title;
-    src: url('../fonts/CHLTHMB.TTF');
-}
-@font-face{
-    font-family: cheltenhm-text;
-    src: url('../fonts/CHLTHMN.TTF');
-}
+// @font-face{
+//     font-family: cheltenhm-title;
+//     src: url('../fonts/CHLTHMB.TTF');
+// }
+// @font-face{
+//     font-family: cheltenhm-text;
+//     src: url('../fonts/CHLTHMN.TTF');
+// }
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 /*@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');*/
 
@@ -39,7 +39,7 @@ $modularscale: (
 //
 // Font faces.
 .azteca-title{
-    font-family: cheltenhm-title;
+    font-family: 'Open Sans', sans-serif;
     font-size: ms(3);
     color: $azteca-marron;
     text-align: center;
@@ -52,7 +52,7 @@ $modularscale: (
 }
 .vending-title{
     @extend .azteca-title;
-    color: $azteca-dark-green;
+    color: $azteca-green;
 }
 .azteca-subtitle{
     @extend .azteca-title;
@@ -63,7 +63,7 @@ $modularscale: (
     @extend .azteca-title;
     font-size: ms(2);
     letter-spacing: 2px;
-    color: $azteca-dark-green;
+    color: $azteca-green;
 }
 .azteca-paragraph{
     font-family: 'Open Sans', sans-serif;
@@ -81,7 +81,7 @@ $modularscale: (
     @extend .azteca-paragraph;
     font-size: ms(1);
     font-weight: 400;
-    color: $azteca-dark-green;
+    color: $azteca-green;
 }
 .azteca-heading-white{
     @extend .azteca-title;
@@ -91,18 +91,18 @@ $modularscale: (
 }
 .azteca-heading{
     @extend .azteca-title;
-    color: $azteca-dark-orange;
+    color: white;
     font-size: ms(4);
     text-shadow: $right-text-shadow;
     letter-spacing: 2px;
 }
 .grupoa-heading{
     @extend .azteca-heading;
-    color: $azteca-blue;
+    color: white;
 }
 .vending-heading{
     @extend .azteca-heading;
-    color: $azteca-green;
+    color: white;
 }
 .azteca-footer{
     @extend .azteca-paragraph;
@@ -113,7 +113,7 @@ $modularscale: (
     list-style-image: url(../gph/info.png);
 }
 b{
-    color: $azteca-dark-green;
+    color: $azteca-green;
     font-weight: bolder;
 }
 .blockquote{
@@ -236,8 +236,8 @@ section#main-logo{
     background-position: right bottom;
 
     img{
-        transform: translateY(15%);
         z-index: 999 !important;
+        max-height: 100px;
     }
 
     nav{
@@ -248,7 +248,7 @@ section#main-logo{
             margin-left: 1rem;
             padding: 0px 0.3rem;
             line-height: $main-logo-height;
-            font-family: cheltenhm-title;
+            font-family: 'Open Sans', sans-serif;
             letter-spacing: 0.5px;
 
             &:hover{
@@ -267,10 +267,6 @@ section#blue-logo{
     @extend section#main-logo;
     background: url(../gph/blue-heading.jpg);
 
-    img{
-        transform: translateY(5%);
-    }
-
     a:hover,
     a.active{
         background: $azteca-dark-blue !important;
@@ -279,10 +275,6 @@ section#blue-logo{
 section#green-logo{
     @extend section#main-logo;
     background: url(../gph/green-heading.jpg);
-
-    img{
-        transform: translateY(10%);
-    }
 
     nav{
         a:hover,
@@ -296,7 +288,7 @@ section#green-logo{
 .navbar{
     background: $azteca-dark-orange;
     text-align: center;
-    font-family: cheltenhm-title;
+    font-family: 'Open Sans', sans-serif;
 
     li:hover{
         background: darken($azteca-dark-orange, 5%);
@@ -340,15 +332,18 @@ div.overlay-index{
     }
 }
 .index-box{
-    background-color: rgba(0,0,0,0.2);
-    outline: 2px dotted white;
-    padding: 2rem;
-
-    &:hover{
-        background-color: rgba(255, 255, 255, 0.5);
-        cursor: pointer;
-        @include transition(0.5s);
-    }
+    // background-color: rgba(0,0,0,0.2);
+    // outline: 2px dotted white;
+    // padding: 2rem;
+    //
+    // &:hover{
+    //     background-color: rgba(255, 255, 255, 0.5);
+    //     cursor: pointer;
+    //     @include transition(0.5s);
+    // }
+    // img{
+    //     max-height: 150px;
+    // }
 }
 section#galleria{
     height: 70vh;
@@ -394,7 +389,7 @@ section#summary{
     }
 
     h3{
-        font-family: cheltenhm-title;
+        font-family: 'Open Sans', sans-serif;
         text-align: center;
     }
 }
@@ -443,7 +438,7 @@ section#links{
     padding: 0px;
 
     h3{
-        font-family: cheltenhm-title;
+        font-family: 'Open Sans', sans-serif;
         color: $white;
         text-shadow: $left-text-shadow;
 
@@ -527,10 +522,10 @@ section#azteca-heading,
 section#contact-heading,
 section#eventos-heading,
 section#tips-heading{
-    height: 330px;
+    height: 300px;
     background: transparent;
 
-    heading{
+    header{
         width: 100%;
     }
 }
@@ -637,11 +632,11 @@ section#products-gallery{
     padding: $main-padding 0px;
 
     #products-carousel{
-        width: 100%;
-        max-width: 600px;
-        height: auto;
-        max-height: 370px;
+        // width: 100%;
+        max-width: 776px;
+        // height: auto;
     }
+
 }
 
 
@@ -680,6 +675,9 @@ section#vending-menu{
     div.card-body{
         padding: 1rem;
     }
+    .card{
+        margin-bottom: 1rem;
+    }
 }
 
 
@@ -710,7 +708,7 @@ section#azteca-mission{
 
     a{
         font-weight: bold;
-        color: $azteca-brown;
+        color: $azteca-dark-blue;
     }
 
     .card{
@@ -726,6 +724,7 @@ section#azteca-mission{
     h3{
         padding: 0px;
         margin-top: -20px;
+        color: $azteca-dark-blue;
     }
 
     .card-text{
@@ -743,6 +742,12 @@ section#azteca-history,
 section#confirm,
 section#vending-specs{
     padding: $main-padding 0px;
+}
+
+section#azteca-history{
+    img{
+        border-radius: 0.618rem;
+    }
 }
 
 

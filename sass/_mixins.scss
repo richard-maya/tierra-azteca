@@ -38,16 +38,16 @@
 
     @keyframes scroll-anim {
         0% {
-            transform: translate(0px, 100px);
+            transform: translate(0px, 35px);
         }
         40% {
-            transform: translate(0px, 115px);
+            transform: translate(0px, 20px);
         }
         96% {
-            transform: translate(0px, 100px);
+            transform: translate(0px, 35px);
         }
         100% {
-            transform: translate(0px, 100px);
+            transform: translate(0px, 35px);
         }
     }
 }
