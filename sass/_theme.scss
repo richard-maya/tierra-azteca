@@ -65,6 +65,13 @@ $modularscale: (
     letter-spacing: 2px;
     color: $azteca-green;
 }
+.grupoa-subtitle{
+    @extend .azteca-title;
+    font-size: ms(2);
+    letter-spacing: 2px;
+    color: $azteca-dark-blue;
+    text-align: left;
+}
 .azteca-paragraph{
     font-family: 'Open Sans', sans-serif;
     font-size: ms(0);
@@ -99,6 +106,15 @@ $modularscale: (
 .grupoa-heading{
     @extend .azteca-heading;
     color: white;
+}
+.grupoa-heading-extra{
+    @extend .azteca-heading;
+    color: $azteca-dark-blue;
+    text-shadow: none;
+    font-size: ms(3);
+    span{
+        font-size: ms(2);
+    }
 }
 .vending-heading{
     @extend .azteca-heading;
@@ -249,7 +265,8 @@ section#main-logo{
             padding: 0px 0.3rem;
             line-height: $main-logo-height;
             font-family: 'Open Sans', sans-serif;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.6px;
+            font-weight: 700;
 
             &:hover{
                 background: $azteca-marron;
@@ -322,7 +339,7 @@ div.overlay-index{
     width: 100%;
     top: 0px;
     left: 0px;
-    color: white;
+    color: $azteca-yellow;
 
     img.down-arrow{
         position: relative;
@@ -550,7 +567,7 @@ section#vending-gallery{
 //
 // Vending Machine Main Features
 section#vending-features{
-    background: $azteca-dark-green;
+    background: $azteca-green;
     color: white;
     padding: $main-padding 0px;
 
@@ -652,6 +669,16 @@ section.tips-alimentacion{
     }
 }
 
+section#products-description{
+    a{
+        color: $azteca-green;
+
+        &:hover{
+            color: $azteca-dark-green;
+        }
+    }
+}
+
 
 // Healthy Project
 //
@@ -697,6 +724,33 @@ section#azteca-about{
     img{
         border-radius: 0.618rem;
     }
+
+    .card{
+        width: 100%;
+        border: 0px;
+        background-color: $azteca-dark-blue !important;
+
+        img{
+            width: 50%;
+            margin-bottom: 1rem;
+        }
+    }
+
+    h3{
+        padding: 0px;
+        margin-top: -20px;
+        color: white;
+    }
+
+    .card-text{
+        font-family: $paragraph-font;
+        font-weight: 300;
+        color: white;
+    }
+
+    a{
+        color: white;
+    }
 }
 
 
@@ -740,7 +794,9 @@ section#azteca-mission{
 section#proposition,
 section#azteca-history,
 section#confirm,
-section#vending-specs{
+section#vending-specs,
+section#legal,
+section#usage{
     padding: $main-padding 0px;
 }
 
@@ -851,9 +907,13 @@ footer{
     color: white;
     font-family: $paragraph-font;
 
-    h5{
+    h5,h6{
         font-family: 'Open Sans', sans-serif;
         font-weight: bolder;
+    }
+
+    li p{
+        font-size: ms(-1);
     }
 
     a{
@@ -863,13 +923,17 @@ footer{
         &:hover{
             color: $azteca-orange;
         }
+
+        &.footer-social-link{
+            text-decoration: none;
+        }
     }
 
     ul.nav{
         padding-top: $main-padding;
 
         a{
-            padding: 0px 1rem;
+            padding: 0px 0.3rem;
         }
     }
 
@@ -880,6 +944,10 @@ footer{
 
     #developer{
         font-size: ms(-2);
+    }
+
+    b{
+        color: $azteca-dark-orange;
     }
 }
 .grupoa-footer{
