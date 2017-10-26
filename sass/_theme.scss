@@ -109,7 +109,7 @@ $modularscale: (
 }
 .grupoa-heading-extra{
     @extend .azteca-heading;
-    color: $azteca-dark-blue;
+    color: $azteca-green;
     text-shadow: none;
     font-size: ms(3);
     span{
@@ -138,7 +138,31 @@ b{
     font-style: italic;
     font-size: ms(0);
     letter-spacing: 0.5px;
-    border-color: $azteca-dark-blue;
+    border-color: white;
+}
+section#privacy{
+    a{
+        color: $azteca-green;
+        &:hover{
+            color: $azteca-dark-green;
+        }
+    }
+    li{
+        @extend .azteca-paragraph;
+    }
+}
+section#sitemap-page{
+    a{
+        color: black;
+        &:hover{
+            color: $azteca-dark-green;
+        }
+    }
+    li{
+        @extend .azteca-paragraph;
+    }
+
+    margin-bottom: ms(5);
 }
 
 
@@ -198,6 +222,7 @@ button:hover{
 .btn-vending-outline{
     background-color: white;
     border-color: $azteca-dark-green;
+
     color: $azteca-dark-green;
     @include transition(0.5s);
 
@@ -303,14 +328,21 @@ section#green-logo{
 
 
 .navbar{
-    background: $azteca-dark-orange;
+    background: $azteca-dark-green;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
 
     li:hover{
-        background: darken($azteca-dark-orange, 5%);
+        background: darken($azteca-dark-green, 5%);
         color: lighten($navbar-light-color, 10%);
         @include transition(0.5s);
+    }
+}
+.azteca-navbar{
+    @extend .navbar;
+    background: $azteca-dark-orange;
+    li:hover{
+        background: darken($azteca-dark-orange, 5%);
     }
 }
 
@@ -333,13 +365,11 @@ div#carouselExampleSlidesOnly{
 }
 div.overlay-index{
     position: absolute;
-    background-image: url('../gph/pattern.png');
-    background-repeat: repeat;
     height: 100%;
     width: 100%;
     top: 0px;
     left: 0px;
-    color: $azteca-yellow;
+    color: white;
 
     img.down-arrow{
         position: relative;
@@ -444,6 +474,18 @@ section#features{
         font-family: $paragraph-font;
         text-align: center;
     }
+
+    .rotation360{
+        @include iconsAnim();
+    }
+
+    .rotation360-2{
+        @include iconsAnim2();
+    }
+
+    .rotation360-3{
+        @include iconsAnim3();
+    }
 }
 
 
@@ -498,7 +540,7 @@ section#process{
 
     small{
         font-family: $paragraph-font;
-        color: $azteca-dark-blue;
+        color: $azteca-dark-green;
         font-size: 0.9rem;
     }
 
@@ -588,13 +630,6 @@ section#vending-features{
         font-family: $paragraph-font;
         text-align: center;
     }
-
-    /*@for $i from 1 through 4{
-        .icon-#{nth($features-list, $i)}:before{
-            color: white;
-            font-size: 6rem;
-        }
-    }*/
 }
 
 
@@ -618,6 +653,7 @@ section#vending-products{
 
         button{
             margin-bottom: 0.382rem;
+            // border-width: 2.5px;
         }
     }
 }
@@ -660,22 +696,11 @@ section#products-gallery{
 // Products Description
 //
 // Azteca Products brief intro.
-section#products-description,
 section.tips-alimentacion{
     padding: $main-padding 0px;
 
     img{
         border-radius: 0.618rem;
-    }
-}
-
-section#products-description{
-    a{
-        color: $azteca-green;
-
-        &:hover{
-            color: $azteca-dark-green;
-        }
     }
 }
 
@@ -697,7 +722,8 @@ section#healthy-project{
 // Veinding Menu
 //
 // Vending sections.
-section#vending-menu{
+section#vending-menu,
+section#products-description{
     padding: $main-padding 0px;
     div.card-body{
         padding: 1rem;
@@ -714,7 +740,7 @@ section#vending-menu{
 section#azteca-about{
     padding: $main-padding 0px;
     color: white;
-    background: $azteca-dark-blue;
+    background: $azteca-dark-green;
 
     h2{
         color: white;
@@ -728,7 +754,7 @@ section#azteca-about{
     .card{
         width: 100%;
         border: 0px;
-        background-color: $azteca-dark-blue !important;
+        background-color: $azteca-dark-green !important;
 
         img{
             width: 50%;
@@ -848,7 +874,7 @@ section#contacto{
         font-family: $paragraph-font;
 
         &:focus{
-            box-shadow: 0 2px 3px 1px $azteca-dark-blue;
+            box-shadow: 0 2px 3px 1px $azteca-dark-green;
         }
     }
 
@@ -961,6 +987,10 @@ footer{
     background: $azteca-dark-green;
 
     a:hover{
+        color: $azteca-green;
+    }
+
+    b{
         color: $azteca-green;
     }
 }

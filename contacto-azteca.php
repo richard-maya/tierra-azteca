@@ -51,58 +51,61 @@
     ================================================== -->
     <link rel="stylesheet" href="assets/tether/css/tether.min.css">
     <link rel="stylesheet" href="assets/animate/animate.min.css">
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
 
-    <!-- NAV BAR
-    ================================================== -->
-    <section id="blue-logo" class="d-flex align-items-end hidden-sm-down">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2 d-flex align-items-center">
+<!-- NAV BAR
+================================================== -->
+<section id="green-logo" class="d-flex align-items-end hidden-sm-down">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 d-flex align-items-center">
+                <a href="index.html">
                     <img src="gph/grupo-azteca.png" alt="" class="img-fluid">
-                </div>
-                <nav class="col-12 col-md-10 d-flex justify-content-end">
-                    <a href="index.html">Inicio</a>
-                    <a href="tierra-azteca/productos-azteca.html">Productos</a>
-                    <a href="tierra-vending/tierra-vending.html">Máquinas</a>
-                    <a href="tierra-azteca.html">Nosotros</a>
-                    <a href="contacto-azteca.php" class="active">Contacto</a>
-                </nav>
+                </a>
             </div>
+            <nav class="col-12 col-md-10 d-flex justify-content-end">
+                <a href="index.html">Inicio</a>
+                <a href="tierra-azteca/productos-azteca.html">Botanas Azteca</a>
+                <a href="tierra-vending/tierra-vending.html">Máquinas Vending</a>
+                <!-- <a href="tierra-azteca.html">Nosotros</a> -->
+                <a href="contacto-azteca.php" class="active">Contacto</a>
+            </nav>
         </div>
-    </section>
+    </div>
+</section>
 
-    <nav class="navbar navbar-toggleable-md bg-faded sticky-top bg-primary navbar-inverse hidden-md-up" style="background-color:#04ACDC !important;">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-            data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-            aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">
-            <img src="gph/grupo-azteca.png" width="auto" height="50" class="d-inline-block align-top" alt="">
-        </a>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="tierra-azteca/productos-azteca.html">Productos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="tierra-vending/tierra-vending.html">Máquinas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="tierra-azteca.html">Nosotros</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="contacto-azteca.php">Contacto <span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+<nav class="navbar navbar-toggleable-md bg-faded sticky-top bg-primary navbar-inverse hidden-md-up" style="background-color:#79E66F !important;">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+        aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="index.html">
+        <img src="gph/grupo-azteca.png" width="auto" height="50" class="d-inline-block align-top" alt="">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tierra-azteca/productos-azteca.html">Botanas Azteca</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tierra-vending/tierra-vending.html">Máquinas Vending</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="tierra-azteca.html">Nosotros</a>
+            </li> -->
+            <li class="nav-item active">
+                <a class="nav-link" href="contacto-azteca.php">Contacto <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
 
 <!-- HEADING
@@ -122,7 +125,7 @@
 
 <!-- BLUE SLOGAN
 ================================================== -->
-<section id="blue-slogan">
+<section id="green-slogan">
     <div class="container">
         <div class="row d-flex justify-content-center">
             <h3 class="azteca-subtitle wow fadeInUp font-italic">Productos saludables de alta calidad a precios competitivos</h3>
@@ -135,7 +138,7 @@
 ================================================== -->
 <section id="process">
     <center>
-        <h2 class="grupoa-title text-center wow fadeInDown">¿Cómo lo hacemos?</h2>
+        <h2 class="vending-title text-center wow fadeInDown">¿Cómo lo hacemos?</h2>
         <small class="wow fadeInDown">En 3 sencillos pasos usted y su empresa podrán comenzar a gozar de los beneficios de tener un equipo Vending en sus instalaciones.</small>
     </center><br>
     <div class="container">
@@ -187,7 +190,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 offset-md-3">
-                <h2 class="grupoa-title d-flex justify-content-center wow fadeInDown" id="azteca-contact-form">Contáctanos</h2>
+                <h2 class="vending-title d-flex justify-content-center wow fadeInDown" id="azteca-contact-form">Contáctanos</h2>
 
                 <form class="formoid-solid-blue" method="post">
                     <div class="row">
@@ -237,7 +240,7 @@
                     </div>
 
                     <div class="row d-flex justify-content-center wow fadeInUp">
-                        <button class="btn btn-grupoa-outline" type="submit">Enviar Mensaje</button>
+                        <button class="btn btn-vending-outline" type="submit">Enviar Mensaje</button>
                     </div>
 
                 </form>
@@ -249,41 +252,87 @@
 
 <!-- FOOTER
 ================================================== -->
-<footer class="grupoa-footer">
+<footer class="vending-footer">
     <div class="container">
-        <div class="row">
-            <div class="col-10 offset-1 col-md-6 offset-md-3 wow fadeInUp">
+        <div class="row d-flex align-items-center">
+            <div class="col-10 offset-1 col-md-6 offset-md-0 wow fadeInUp">
                 <div class="row justify-content-center">
-                    <div class="col-3 hidden-sm-down">
-                        <img src="gph/chat-index.png" class="img-fluid" alt="">
+                    <div class="col-3 d-none d-md-block">
+                        <img src="gph/chat-vending.png" class="img-fluid" alt="">
                     </div>
                     <div class="col-9">
-                        <h5>Contáctanos</h5>
+                        <h5>Tierra Azteca - Contacto</h5>
+                        <h6>Enlace comercial y ventas directas</h6>
                         <p class="azteca-footer">Tel: <a href="tel://55-5815-0387">(52) 55 5815-0387</a> <br>
-                            E-mail: <a href="mailto:contacto@tierra-azteca.com">contacto@tierra-azteca.com</a></p>
-                        <a href="contacto-azteca.php#azteca-contact-form" class="azteca-footer">Escríbenos un mensaje</a>
+                            E-mail: <a href="mailto:contacto@tierra-azteca.com">contacto@tierra-azteca.com</a><br>
+                            Toluca y Cd. de México</p>
+                        <!-- <a href="contacto-azteca.php#azteca-contact-form" class="azteca-footer">Escríbenos un mensaje</a> -->
                     </div>
                 </div>
+            </div>
+            <div class="col-10 offset-1 col-md-6 offset-md-0">
+                <p class="text-center wow fadeInUp">Tierra Azteca Botanas / Tierra Azteca Vending <br> <b class="green">Empresas del Grupo Tierra Azteca</b></p>
             </div>
         </div>
 
         <!-- Site Map -->
         <div class="row justify-content-center">
-            <ul class="nav nav-justified wow fadeInUp">
-                <li>
-                    <a href="index.html" class="azteca-footer">Inicio</a>
-                    <span class="hidden-sm-down">|</span><br class="hidden-md-up">
-                    <a href="tierra-azteca/productos-azteca.html" class="azteca-footer">Productos Tierra Azteca</a>
-                    <span class="hidden-sm-down">|</span><br class="hidden-md-up">
-                    <a href="tierra-vending/tierra-vending.html" class="azteca-footer">Máquinas Vending</a>
-                    <span class="hidden-sm-down">|</span><br class="hidden-md-up">
-                    <a href="tierra-azteca.html" class="azteca-footer">Nosotros</a>
-                    <span class="hidden-sm-down">|</span><br class="hidden-md-up">
-                    <a href="tierra-azteca.html" class="azteca-footer">Aviso de Privacidad</a>
-                    <span class="hidden-sm-down">|</span><br class="hidden-md-up">
-                    <a href="contacto-azteca.php" class="azteca-footer">Contacto</a>
-                </li>
-            </ul>
+            <div class="col-md-4">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <p class="text-xs-center text-md-left wow fadeInUp">Tierra Azteca</p>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link azteca-footer text-xs-center text-md-left wow fadeInUp" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link azteca-footer text-xs-center text-md-left wow fadeInUp" href="tierra-azteca/productos-azteca.html">Productos Tierra Azteca</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link azteca-footer text-xs-center text-md-left wow fadeInUp" href="tierra-vending/tierra-vending.html">Máquinas Vending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link azteca-footer text-xs-center text-md-left wow fadeInUp" href="contacto-azteca.php">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <p class="text-xs-center text-md-left wow fadeInUp">Legal</p>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link azteca-footer text-xs-center text-md-left wow fadeInUp" href="aviso-legal.html">Aviso Legal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link azteca-footer text-xs-center text-md-left wow fadeInUp" href="condiciones-uso.html">Condiciones de Uso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link azteca-footer text-xs-center text-md-left wow fadeInUp" href="aviso-privacidad.html">Aviso de Privacidad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link azteca-footer text-xs-center text-md-left wow fadeInUp" href="sitemap.html">Mapa del Sitio</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <p class="text-xs-center text-md-left wow fadeInUp">Redes Sociales</p>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" target="_blank" class="footer-social-link">
+                            <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer-social-link">
+                            <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer-social-link">
+                            <i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <div class="row justify-content-center wow fadeInUp">

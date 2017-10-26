@@ -52,30 +52,33 @@
     ================================================== -->
     <link rel="stylesheet" href="assets/tether/css/tether.min.css">
     <link rel="stylesheet" href="assets/animate/animate.min.css">
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
 
 <!-- NAV BAR
 ================================================== -->
-<section id="blue-logo" class="d-flex align-items-end hidden-sm-down">
+<section id="green-logo" class="d-flex align-items-end hidden-sm-down">
     <div class="container">
         <div class="row">
             <div class="col-md-2 d-flex align-items-center">
-                <img src="gph/grupo-azteca.png" alt="" class="img-fluid">
+                <a href="index.html">
+                    <img src="gph/grupo-azteca.png" alt="" class="img-fluid">
+                </a>
             </div>
             <nav class="col-12 col-md-10 d-flex justify-content-end">
                 <a href="index.html">Inicio</a>
-                <a href="tierra-azteca/productos-azteca.html">Productos</a>
-                <a href="tierra-vending/tierra-vending.html">Máquinas</a>
-                <a href="tierra-azteca.html">Nosotros</a>
+                <a href="tierra-azteca/productos-azteca.html">Botanas Azteca</a>
+                <a href="tierra-vending/tierra-vending.html">Máquinas Vending</a>
+                <!-- <a href="tierra-azteca.html">Nosotros</a> -->
                 <a href="contacto-azteca.php">Contacto</a>
             </nav>
         </div>
     </div>
 </section>
 
-<nav class="navbar navbar-toggleable-md bg-faded sticky-top bg-primary navbar-inverse hidden-md-up" style="background-color:#04ACDC !important;">
+<nav class="navbar navbar-toggleable-md bg-faded sticky-top bg-primary navbar-inverse hidden-md-up" style="background-color:#79E66F !important;">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -90,14 +93,14 @@
                 <a class="nav-link" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="tierra-azteca/productos-azteca.html">Productos</a>
+                <a class="nav-link" href="tierra-azteca/productos-azteca.html">Botanas Azteca</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="tierra-vending/tierra-vending.html">Máquinas</a>
+                <a class="nav-link" href="tierra-vending/tierra-vending.html">Máquinas Vending</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="tierra-azteca.html">Nosotros</a>
-            </li>
+            </li> -->
             <li class="nav-item">
                 <a class="nav-link" href="contacto-azteca.php">Contacto</a>
             </li>
@@ -125,7 +128,7 @@
             <p class="col-12 col-md-6 azteca-paragraph wow fadeInUp">Bajo ninguna circunstancia Tierra Azteca  se hará responsable del uso ilegal de imágenes para la promoción y/o publicidad de los mismos productos bajo otra razón social. <br> <br>
             Cualquier comentario sobre expectativas es válido únicamente en mensaje y/o llamada telefónica realizado ( o)  al medio de contacto autorizado.</p>
             <div class="col-12 col-md-4">
-                <img src="img/about/legal.jpg" alt="legal" class="img-fluid wow fadeInRight">
+                <img src="img/about/legal.jpg" alt="legal" class="img-fluid wow fadeIn rounded">
             </div>
         </div>
     </div>
@@ -134,13 +137,13 @@
 
 <!-- FOOTER
 ================================================== -->
-<footer class="grupoa-footer">
+<footer class="vending-footer">
     <div class="container">
-        <div class="row">
-            <div class="col-10 offset-1 col-md-6 offset-md-3 wow fadeInUp">
-                <div class="row">
-                    <div class="col-3">
-                        <img src="gph/chat-index.png" class="img-fluid" alt="">
+        <div class="row d-flex align-items-center">
+            <div class="col-10 offset-1 col-md-6 offset-md-0 wow fadeInUp">
+                <div class="row justify-content-center">
+                    <div class="col-3 d-none d-md-block">
+                        <img src="gph/chat-vending.png" class="img-fluid" alt="">
                     </div>
                     <div class="col-9">
                         <h5>Tierra Azteca - Contacto</h5>
@@ -152,13 +155,12 @@
                     </div>
                 </div>
             </div>
+            <div class="col-10 offset-1 col-md-6 offset-md-0">
+                <p class="text-center wow fadeInUp">Tierra Azteca Botanas / Tierra Azteca Vending <br> <b class="green">Empresas del Grupo Tierra Azteca</b></p>
+            </div>
         </div>
 
         <!-- Site Map -->
-        <div class="row justify-content-center">
-            <p class="text-center wow fadeInUp">Tierra Azteca Botanas / Tierra Azteca Vending - Empresas del Grupo Tierra Azteca</p>
-        </div>
-
         <div class="row justify-content-center">
             <div class="col-md-4">
                 <ul class="nav flex-column">
@@ -173,9 +175,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link azteca-footer text-xs-center text-md-left wow fadeInUp" href="tierra-vending/tierra-vending.html">Máquinas Vending</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link azteca-footer text-xs-center text-md-left wow fadeInUp" href="tierra-azteca.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link azteca-footer text-xs-center text-md-left wow fadeInUp" href="contacto-azteca.php">Contacto</a>
@@ -198,6 +197,24 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link azteca-footer text-xs-center text-md-left wow fadeInUp" href="sitemap.html">Mapa del Sitio</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <p class="text-xs-center text-md-left wow fadeInUp">Redes Sociales</p>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" target="_blank" class="footer-social-link">
+                            <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer-social-link">
+                            <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer-social-link">
+                            <i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
